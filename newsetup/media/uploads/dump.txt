@@ -1,0 +1,227 @@
+object(stdClass)[757]
+  public '__CLASS__' => string 'Symfony\Component\Security\Core\SecurityContext' (length=47)
+  public 'token' => 
+    object(stdClass)[736]
+      public '__CLASS__' => string 'Symfony\Component\Security\Core\Authentication\Token\RememberMeToken' (length=68)
+      public 'key' => string 'eUodAjYEzDza72' (length=14)
+      public 'providerKey' => string 'main' (length=4)
+  public 'accessDecisionManager' => 
+    object(stdClass)[739]
+      public '__CLASS__' => string 'Symfony\Component\Security\Core\Authorization\AccessDecisionManager' (length=67)
+      public 'voters' => 
+        array
+          0 => 
+            object(stdClass)[767]
+              public '__CLASS__' => string 'Symfony\Component\Security\Core\Authorization\Voter\RoleHierarchyVoter' (length=70)
+              public 'roleHierarchy' => 
+                object(stdClass)[770]
+                  public '__CLASS__' => string 'Symfony\Component\Security\Core\Role\RoleHierarchy' (length=50)
+                  public 'hierarchy' => string 'Array(0)' (length=8)
+                  public 'map' => string 'Array(0)' (length=8)
+          1 => 
+            object(stdClass)[769]
+              public '__CLASS__' => string 'Symfony\Component\Security\Core\Authorization\Voter\AuthenticatedVoter' (length=70)
+              public 'authenticationTrustResolver' => 
+                object(stdClass)[771]
+                  public '__CLASS__' => string 'Symfony\Component\Security\Core\Authentication\AuthenticationTrustResolver' (length=74)
+                  public 'anonymousClass' => string 'Symfony\Component\Security\Core\Authentication\Token\AnonymousToken' (length=67)
+                  public 'rememberMeClass' => string 'Symfony\Component\Security\Core\Authentication\Token\RememberMeToken' (length=68)
+      public 'strategy' => string 'decideAffirmative' (length=17)
+      public 'allowIfAllAbstainDecisions' => boolean false
+      public 'allowIfEqualGrantedDeniedDecisions' => boolean true
+  public 'authenticationManager' => 
+    object(stdClass)[766]
+      public '__CLASS__' => string 'Symfony\Component\Security\Core\Authentication\AuthenticationProviderManager' (length=76)
+      public 'providers' => 
+        array
+          0 => 
+            object(stdClass)[773]
+              public '__CLASS__' => string 'Symfony\Component\Security\Core\Authentication\Provider\DaoAuthenticationProvider' (length=81)
+              public 'encoderFactory' => 
+                object(stdClass)[774]
+                  public '__CLASS__' => string 'Symfony\Component\Security\Core\Encoder\EncoderFactory' (length=54)
+                  public 'encoders' => string 'Array(1)' (length=8)
+              public 'userProvider' => 
+                object(stdClass)[777]
+                  public '__CLASS__' => string 'FOS\UserBundle\Entity\UserManager' (length=33)
+                  public 'em' => string 'Doctrine\ORM\EntityManager' (length=26)
+                  public 'class' => string 'Sylius\Sandbox\Bundle\UserBundle\Entity\User' (length=44)
+                  public 'repository' => string 'Doctrine\ORM\EntityRepository' (length=29)
+                  public 'encoderFactory' => string 'Symfony\Component\Security\Core\Encoder\EncoderFactory' (length=54)
+                  public 'usernameCanonicalizer' => string 'FOS\UserBundle\Util\Canonicalizer' (length=33)
+                  public 'emailCanonicalizer' => string 'FOS\UserBundle\Util\Canonicalizer' (length=33)
+          1 => 
+            object(stdClass)[772]
+              public '__CLASS__' => string 'Symfony\Component\Security\Core\Authentication\Provider\RememberMeAuthenticationProvider' (length=88)
+              public 'userChecker' => 
+                object(stdClass)[782]
+                  public '__CLASS__' => string 'Symfony\Component\Security\Core\User\UserChecker' (length=48)
+              public 'key' => string 'eUodAjYEzDza72' (length=14)
+              public 'providerKey' => string 'main' (length=4)
+          2 => 
+            object(stdClass)[776]
+              public '__CLASS__' => string 'Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider' (length=87)
+              public 'key' => string '4ffa9bc5efd5f' (length=13)
+      public 'eraseCredentials' => boolean true
+      public 'eventDispatcher' => 
+        object(stdClass)[783]
+          public '__CLASS__' => string 'Symfony\Component\HttpKernel\Debug\ContainerAwareTraceableEventDispatcher' (length=73)
+          public 'logger' => 
+            object(stdClass)[784]
+              public '__CLASS__' => string 'Symfony\Bridge\Monolog\Logger' (length=29)
+              public 'levels' => 
+                array
+                  100 => string 'DEBUG' (length=5)
+                  200 => string 'INFO' (length=4)
+                  300 => string 'WARNING' (length=7)
+                  400 => string 'ERROR' (length=5)
+                  500 => string 'CRITICAL' (length=8)
+                  550 => string 'ALERT' (length=5)
+              public 'name' => string 'event' (length=5)
+              public 'handlers' => 
+                array
+                  0 => string 'Symfony\Bridge\Monolog\Handler\DebugHandler' (length=43)
+                  1 => string 'Monolog\Handler\StreamHandler' (length=29)
+              public 'processors' => 
+                array
+                  empty
+          public 'called' => 
+            array
+              'kernel.request.Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest' => 
+                array
+                  'event' => string 'kernel.request' (length=14)
+                  'priority' => int 1024
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'Symfony\Component\HttpKernel\EventListener\ProfilerListener' (length=59)
+                  'method' => string 'onKernelRequest' (length=15)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/ProfilerListener.php' (length=132)
+                  'line' => int 72
+                  'pretty' => string 'Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest' (length=76)
+              'kernel.request.Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest' => 
+                array
+                  'event' => string 'kernel.request' (length=14)
+                  'priority' => int 128
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'Symfony\Bundle\FrameworkBundle\EventListener\SessionListener' (length=60)
+                  'method' => string 'onKernelRequest' (length=15)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/sandbox/cache/dev/classes.php' (length=71)
+                  'line' => int 40
+                  'pretty' => string 'Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest' (length=77)
+              'kernel.request.Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest' => 
+                array
+                  'event' => string 'kernel.request' (length=14)
+                  'priority' => int 32
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'Symfony\Component\HttpKernel\EventListener\RouterListener' (length=57)
+                  'method' => string 'onKernelRequest' (length=15)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/sandbox/cache/dev/classes.php' (length=71)
+                  'line' => int 5656
+                  'pretty' => string 'Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest' (length=74)
+              'kernel.request.Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest' => 
+                array
+                  'event' => string 'kernel.request' (length=14)
+                  'priority' => int 16
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'Symfony\Component\HttpKernel\EventListener\LocaleListener' (length=57)
+                  'method' => string 'onKernelRequest' (length=15)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/EventListener/LocaleListener.php' (length=130)
+                  'line' => int 35
+                  'pretty' => string 'Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest' (length=74)
+              'kernel.request.Symfony\Component\Security\Http\Firewall::onKernelRequest' => 
+                array
+                  'event' => string 'kernel.request' (length=14)
+                  'priority' => int 8
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'Symfony\Component\Security\Http\Firewall' (length=40)
+                  'method' => string 'onKernelRequest' (length=15)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/sandbox/cache/dev/classes.php' (length=71)
+                  'line' => int 7351
+                  'pretty' => string 'Symfony\Component\Security\Http\Firewall::onKernelRequest' (length=57)
+              'kernel.request.FOS\RestBundle\EventListener\BodyListener::onKernelRequest' => 
+                array
+                  'event' => string 'kernel.request' (length=14)
+                  'priority' => int 0
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'FOS\RestBundle\EventListener\BodyListener' (length=41)
+                  'method' => string 'onKernelRequest' (length=15)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/EventListener/BodyListener.php' (length=123)
+                  'line' => int 46
+                  'pretty' => string 'FOS\RestBundle\EventListener\BodyListener::onKernelRequest' (length=58)
+              'kernel.controller.FOS\RestBundle\EventListener\ViewResponseListener::onKernelController' => 
+                array
+                  'event' => string 'kernel.controller' (length=17)
+                  'priority' => int 0
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'FOS\RestBundle\EventListener\ViewResponseListener' (length=49)
+                  'method' => string 'onKernelController' (length=18)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/EventListener/ViewResponseListener.php' (length=131)
+                  'line' => int 52
+                  'pretty' => string 'FOS\RestBundle\EventListener\ViewResponseListener::onKernelController' (length=69)
+              'kernel.controller.FOS\RestBundle\EventListener\FormatListener::onKernelController' => 
+                array
+                  'event' => string 'kernel.controller' (length=17)
+                  'priority' => int 0
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'FOS\RestBundle\EventListener\FormatListener' (length=43)
+                  'method' => string 'onKernelController' (length=18)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/EventListener/FormatListener.php' (length=125)
+                  'line' => int 69
+                  'pretty' => string 'FOS\RestBundle\EventListener\FormatListener::onKernelController' (length=63)
+              'kernel.controller.Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector::onKernelController' => 
+                array
+                  'event' => string 'kernel.controller' (length=17)
+                  'priority' => int 0
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector' (length=65)
+                  'method' => string 'onKernelController' (length=18)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/DataCollector/RequestDataCollector.php' (length=138)
+                  'line' => int 61
+                  'pretty' => string 'Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector::onKernelController' (length=85)
+              'kernel.controller.Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController' => 
+                array
+                  'event' => string 'kernel.controller' (length=17)
+                  'priority' => int 0
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector' (length=64)
+                  'method' => string 'onKernelController' (length=18)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/DataCollector/RouterDataCollector.php' (length=137)
+                  'line' => int 68
+                  'pretty' => string 'Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController' (length=84)
+              'kernel.view.FOS\RestBundle\EventListener\ViewResponseListener::onKernelView' => 
+                array
+                  'event' => string 'kernel.view' (length=11)
+                  'priority' => int 100
+                  'type' => string 'Method' (length=6)
+                  'class' => string 'FOS\RestBundle\EventListener\ViewResponseListener' (length=49)
+                  'method' => string 'onKernelView' (length=12)
+                  'file' => string '/home/umpirsky/Projects/PHP/bgbstudio.loc/vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/EventListener/ViewResponseListener.php' (length=131)
+                  'line' => int 69
+                  'pretty' => string 'FOS\RestBundle\EventListener\ViewResponseListener::onKernelView' (length=63)
+          public 'stopwatch' => 
+            object(stdClass)[789]
+              public '__CLASS__' => string 'Symfony\Component\HttpKernel\Debug\Stopwatch' (length=44)
+              public 'sections' => 
+                array
+                  '__root__' => string 'Symfony\Component\HttpKernel\Debug\Section' (length=42)
+              public 'activeSections' => 
+                array
+                  '__root__' => string 'Symfony\Component\HttpKernel\Debug\Section' (length=42)
+                  0 => string 'Symfony\Component\HttpKernel\Debug\Section' (length=42)
+                  1 => string 'Symfony\Component\HttpKernel\Debug\Section' (length=42)
+          public 'priorities' => 
+            array
+              'kernel.request_[array] FOS\RestBundle\EventListener\BodyListener::onKernelRequest' => int 0
+              'kernel.request_[array] Symfony\Component\Security\Http\Firewall::onKernelRequest' => int 8
+              'kernel.request_[array] Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest' => int 16
+              'kernel.request_[array] Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest' => int 128
+              'kernel.request_[array] Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest' => int 1024
+              'kernel.request_[array] Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest' => int 32
+              'kernel.exception_[array] Symfony\Component\Security\Http\Firewall\ExceptionListener::onKernelException' => int 0
+              'kernel.response_[array] Symfony\Component\Security\Http\Firewall\ContextListener::onKernelResponse' => int 0
+              'kernel.controller_[array] FOS\RestBundle\EventListener\ViewResponseListener::onKernelController' => int 0
+              'kernel.controller_[array] FOS\RestBundle\EventListener\FormatListener::onKernelController' => int 0
+              'kernel.controller_[array] Symfony\Bundle\FrameworkBundle\DataCollector\RequestDataCollector::onKernelController' => int 0
+              'kernel.controller_[array] Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController' => int 0
+              'kernel.view_[array] FOS\RestBundle\EventListener\ViewResponseListener::onKernelView' => int 100
+          public 'profiler' => null
+  public 'alwaysAuthenticate' => boolean false
